@@ -1,11 +1,11 @@
 import Card from "../../library/Card";
-import fakeAPI from "../../../fakeAPI";
+
 import { useContext } from "react";
 import { LocalStorageContext } from "../../library/localStorage";
 
 
 export default function Content({ selectedTab }) {
-    const { notes, addNote, updateNote, deleteNote, addFavorite } = useContext(LocalStorageContext);
+    const { notes, deleteNote, addFavorite } = useContext(LocalStorageContext);
     function onFavoriteClick(id) {
         console.log("tha tim thang nay" + id);
         addFavorite(id);

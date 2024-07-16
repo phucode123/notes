@@ -1,11 +1,11 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import {  useNavigate, useParams } from 'react-router-dom';
 import styles from './viewNode.module.scss'; // Import file CSS module
 import { LocalStorageContext } from "../../library/localStorage";
 import formattedDate from '../../library/getDate';
 
-export default function ViewUpdate({ idNote }) {
-    const { notes, addNote, updateNote, deleteNote, addFavorite, viewNote } = useContext(LocalStorageContext);
+export default function ViewUpdate() {
+    const { notes, updateNote, deleteNote  } = useContext(LocalStorageContext);
     const { id } = useParams();
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');

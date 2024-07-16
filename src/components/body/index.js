@@ -1,6 +1,6 @@
 import Content from "./content"
 import styles from './Body.module.scss';
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import AddNote from "./addNote";
 import ViewUpdate from "./viewAndUpdateNote";
 

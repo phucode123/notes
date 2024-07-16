@@ -7,8 +7,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ReplayIcon from '@mui/icons-material/Replay';
 import { Link } from 'react-router-dom';
 
-export default function Card({ item, onFavoriteClick, onViewContentClick, onDeleteContentClick }) {
-    const { id, name, description, favorite } = item;
+export default function Card({ item, onFavoriteClick,  onDeleteContentClick }) {
+    const { id, name, description} = item;
 
     return (
         <div className={`${styles.card} ${item.deleted ? styles.deleted : ''}`}>

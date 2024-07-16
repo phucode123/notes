@@ -1,6 +1,6 @@
 // src/theme.js
 import { createTheme } from '@mui/material/styles';
-import { green, blue, blueGrey, red } from '@mui/material/colors';
+import { green, blueGrey } from '@mui/material/colors';
 
 const theme = createTheme({
     components: {

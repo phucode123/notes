@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './addNote.module.scss'; // Import file CSS module
 import { LocalStorageContext } from "../../library/localStorage";
 import formattedDate from '../../library/getDate';
@@ -7,7 +7,7 @@ import formattedDate from '../../library/getDate';
 export default function AddNote() {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
-    const { notes, addNote, updateNote, deleteNote, addFavorite } = useContext(LocalStorageContext);
+    const {  addNote } = useContext(LocalStorageContext);
 
     const navigate = useNavigate();
 

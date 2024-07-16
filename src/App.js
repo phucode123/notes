@@ -2,7 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './App.css';
-import { Route, Routes, Link } from 'react-router-dom'
+
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
 import Header from './components/header';
