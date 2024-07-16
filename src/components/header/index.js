@@ -13,8 +13,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 
 function Header({ selectedTab, setSelectedTab }) {
-    const handleChange = ( newValue) => {
+    const handleChange = (event, newValue) => {
         setSelectedTab(newValue);
+        console.log(newValue);
     };
     return (
         <ThemeProvider theme={theme}>

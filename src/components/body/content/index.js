@@ -19,6 +19,7 @@ export default function Content({ selectedTab }) {
         console.log(id);
 
     }
+    console.log(notes);
     // Lọc và chỉ trả về các ghi chú tương ứng với tab được chọn
     // const filterednotes = selectedTab === 0
     //     ? notes.filter(note => note.favorite) // Hiển thị các ghi chú ưa thích

@@ -33,4 +33,4 @@ const listNotes = [
     },
 ]
 
-export default {listNotes}
+export  {listNotes}
